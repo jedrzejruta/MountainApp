@@ -1,11 +1,17 @@
-import React from "react";
-import { Button, View } from 'react-native';
+import React from 'react';
+import { Button, SafeAreaView } from 'react-native';
+import { HomeScreenNavProp } from '../../components/DrawerNavigation';
 
-const Home = ({ navigation } : any) => {
+type HomeProps = {
+	navigation: HomeScreenNavProp;
+};
+
+
+const Home = ({ navigation} : HomeProps) :JSX.Element => {
 	return (
-		<View>
+		<SafeAreaView>
 			<Button onPress={() => navigation.navigate('Profile')} title="Profile"/>
-		</View>
+		</SafeAreaView>
 	);
 };
 

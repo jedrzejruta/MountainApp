@@ -1,13 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import DrawerNavigation from './src/components/DrawerNavigation';
+import { DrawerNavigation } from './src/components/DrawerNavigation';
 
-export default function App() {
-  return (
-	  <NavigationContainer>
-		  <DrawerNavigation/>
-	  </NavigationContainer>
-
-  );
-};
+export default function App() : JSX.Element {
+	return (
+		<NavigationContainer>
+			<DrawerNavigation />
+		</NavigationContainer>
+	);
+}

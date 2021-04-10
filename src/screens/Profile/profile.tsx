@@ -1,11 +1,16 @@
-import React from "react";
-import { Button, View } from 'react-native';
+import React from 'react';
+import { Button, SafeAreaView} from 'react-native';
+import { ProfileScreenNavProp } from '../../components/DrawerNavigation';
 
-const Profile = ({ navigation } : any) => {
+type ProfileScreenProps = {
+	navigation: ProfileScreenNavProp;
+};
+
+const Profile = ({ navigation } : ProfileScreenProps) : JSX.Element => {
 	return (
-		<View>
+		<SafeAreaView>
 			<Button onPress={() => navigation.goBack()} title="Go back to home"/>
-		</View>
+		</SafeAreaView>
 	);
 };
 
