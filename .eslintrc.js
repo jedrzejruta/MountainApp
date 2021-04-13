@@ -33,8 +33,7 @@
             "tab"
         ],
         "linebreak-style": [
-            "error",
-            "unix"
+            "error", (process.platform === "win32" ? "windows" : "unix")
         ],
         "quotes": [
             "error",
