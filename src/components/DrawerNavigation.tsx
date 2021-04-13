@@ -1,7 +1,7 @@
 import React from 'react';
 import { createDrawerNavigator, DrawerNavigationProp } from '@react-navigation/drawer';
-import Profile from '../screens/Profile/profile';
-import Home from '../screens/Home/home';
+import Profile from '../screens/Profile';
+import Home from '../screens/Home';
 
 type RootNavParamList = {
 	Home: undefined,
@@ -14,7 +14,6 @@ export type ProfileScreenNavProp = DrawerNavigationProp<RootNavParamList, 'Profi
 const Drawer = createDrawerNavigator<RootNavParamList>();
 
 export const DrawerNavigation = () : JSX.Element => { //any is not a good type
-	//get to know what is a return of this function component
 	return (
 		<Drawer.Navigator initialRouteName="Home">
 			<Drawer.Screen name="Home" component={Home} />
