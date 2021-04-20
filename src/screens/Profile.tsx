@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, SafeAreaView} from 'react-native';
-import { ProfileScreenNavProp } from '../../components/DrawerNavigation';
+import { ProfileScreenNavProp } from '../components/DrawerNavigation';
 
 type ProfileScreenProps = {
 	navigation: ProfileScreenNavProp;
