@@ -2451,6 +2451,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mapbox/geo-viewport@npm:>= 0.4.0":
+  version: 0.4.1
+  resolution: "@mapbox/geo-viewport@npm:0.4.1"
+  dependencies:
+    "@mapbox/sphericalmercator": ~1.1.0
+  checksum: 29f36305c465143f08bc151f4351919dc26060403b6a6aee1cd90eb60fa887d912a764d6ce916b77b7cb1fc729bc2a80ccec5b2d7668eb9d9973f39214b63a79
+  languageName: node
+  linkType: hard
+
+"@mapbox/sphericalmercator@npm:~1.1.0":
+  version: 1.1.0
+  resolution: "@mapbox/sphericalmercator@npm:1.1.0"
+  bin:
+    bbox: bin/bbox.js
+    to4326: bin/to4326.js
+    to900913: bin/to900913.js
+    xyz: bin/xyz.js
+  checksum: 826719a93bd358ed0dab0b5bca0fa169b3e7d8af09ee171487c3ebdc7fc4574a97661d610da3e4476ec54c9b547cdfc9ab01dc444222153bc2d30b4d5da17ed0
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.4":
   version: 2.1.4
   resolution: "@nodelib/fs.scandir@npm:2.1.4"
@@ -2500,7 +2521,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-platform-android@npm:^4.13.0":
+"@react-native-community/cli-platform-android@npm:^4.10.0, @react-native-community/cli-platform-android@npm:^4.13.0":
   version: 4.13.0
   resolution: "@react-native-community/cli-platform-android@npm:4.13.0"
   dependencies:
@@ -2518,7 +2539,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-platform-ios@npm:^4.13.0":
+"@react-native-community/cli-platform-ios@npm:^4.10.0":
   version: 4.13.0
   resolution: "@react-native-community/cli-platform-ios@npm:4.13.0"
   dependencies:
@@ -2571,7 +2592,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli@npm:^4.14.0":
+"@react-native-community/cli@npm:^4.10.0":
   version: 4.14.0
   resolution: "@react-native-community/cli@npm:4.14.0"
   dependencies:
@@ -2628,6 +2649,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-mapbox-gl/maps@npm:8.0.0":
+  version: 8.0.0
+  resolution: "@react-native-mapbox-gl/maps@npm:8.0.0"
+  dependencies:
+    "@mapbox/geo-viewport": ">= 0.4.0"
+    "@turf/along": ">= 4.0.0 <7.0.0"
+    "@turf/distance": ">= 4.0.0 <7.0.0"
+    "@turf/helpers": ">= 4.6.0 <7.0.0"
+    "@turf/length": ">= 4.6.0 <7.0.0"
+    "@turf/nearest-point-on-line": ">= 4.0.0 <7.0.0"
+    debounce: ^1.2.0
+  peerDependencies:
+    prop-types: ">=15.5.8"
+    react: ^16.6.1
+    react-native: ">=0.59.9"
+  checksum: 5c41f01a1411ff6d3331a0893a11bd89cdd5477348bfd5390195aabee27ff42975567ffcd13d91d9198adc7af197b1b28dae00b5d2de203a5f59d5d001d7f62c
+  languageName: node
+  linkType: hard
+
 "@react-navigation/core@npm:^5.15.2":
   version: 5.15.2
   resolution: "@react-navigation/core@npm:5.15.2"
@@ -2681,6 +2721,134 @@ __metadata:
   dependencies:
     nanoid: ^3.1.15
   checksum: 6379705a65a2ce8a2ee1223ff6ec9042eee3c3834094f893d865306d32214615eef76c551c8e6ad6fcde850a33fd67636ca8b959aefe8dfafb7b762834d231fc
+  languageName: node
+  linkType: hard
+
+"@turf/along@npm:>= 4.0.0 <7.0.0":
+  version: 6.3.0
+  resolution: "@turf/along@npm:6.3.0"
+  dependencies:
+    "@turf/bearing": ^6.3.0
+    "@turf/destination": ^6.3.0
+    "@turf/distance": ^6.3.0
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+  checksum: 37f97e8ecea2af2c5c377b5b2e384c06a7ec8a112b199a0180b2dd6d40421a491a68fc07aace8b83e3d2892b9f103a41f61fc30585b6775af81ddd3488e1a7c8
+  languageName: node
+  linkType: hard
+
+"@turf/bbox@npm:*":
+  version: 6.3.0
+  resolution: "@turf/bbox@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+    "@turf/meta": ^6.3.0
+  checksum: e28c2f7ab6ee0e22dac4aba1e9d60530de61c0d87285b8cf3819cca0875a19bad9330861c7717b025f63e9535892a96375f689beb97306ab7c2cba8c20c5ecfe
+  languageName: node
+  linkType: hard
+
+"@turf/bearing@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/bearing@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+  checksum: f38f9c9192fb6735758a4c502a606c70ad48c8c3cc3c94764e3a8b4cd8e660a682860e1190c8da89048f2380cf8cdf8f6e227b86144b323725a2fedbc96d7821
+  languageName: node
+  linkType: hard
+
+"@turf/destination@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/destination@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+  checksum: 949eb20d4f1ebf529efdae455b4e04a3682d5f728384c10f6df9b39b029b3c30d14bb392c610b6a256691ba725d126bc059d38455d9a199c0b85d263fe612d76
+  languageName: node
+  linkType: hard
+
+"@turf/distance@npm:>= 4.0.0 <7.0.0, @turf/distance@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/distance@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+  checksum: 9c3f228b6c90e95fa86448af969d0aad68c9472374d5cc74e441b475ba9dd1e47243e7b84a9480910b363ed0910e50b3acc7974c6f54cd39d9eee2f1efc55f05
+  languageName: node
+  linkType: hard
+
+"@turf/helpers@npm:6.x, @turf/helpers@npm:>= 4.6.0 <7.0.0, @turf/helpers@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/helpers@npm:6.3.0"
+  checksum: be72e760e86e831e50dafbf3a1aacd94c188e8cb69b5b67e4dbea0fe17c3065f0f1e35c08c24e7b40594f8c38d1595e9eb1d0749452efe4fb12525c3e81ea78c
+  languageName: node
+  linkType: hard
+
+"@turf/invariant@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/invariant@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+  checksum: e140fa10003937360b12e812ee822d3270d63d21df58a938b6e3525d446346f407b4dfa97d2b9aac23d2d47d2495b3ac491142259fb43da57728df3e728b2bbb
+  languageName: node
+  linkType: hard
+
+"@turf/length@npm:>= 4.6.0 <7.0.0":
+  version: 6.3.0
+  resolution: "@turf/length@npm:6.3.0"
+  dependencies:
+    "@turf/distance": ^6.3.0
+    "@turf/helpers": ^6.3.0
+    "@turf/meta": ^6.3.0
+  checksum: 825ec676f4245e2498dd3726d40baa3e4e1ca263fc13c2f387cfa1fac63ab1791431758a1b3bd5bce6923b518a5e5cd9dd3ec5b9de8ede2a14aa482f27383277
+  languageName: node
+  linkType: hard
+
+"@turf/line-intersect@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/line-intersect@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+    "@turf/line-segment": ^6.3.0
+    "@turf/meta": ^6.3.0
+    geojson-rbush: 3.x
+  checksum: ebadd251c82d60f46681ac725d2ac22abdaa07b3c4cd27a82f761cefc20fb93d4aac860676bac42f29dc0bc037c5082409eb57655738ca8b35c4e0f782a46e9d
+  languageName: node
+  linkType: hard
+
+"@turf/line-segment@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/line-segment@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+    "@turf/meta": ^6.3.0
+  checksum: ad39e61e78e6c7fe333bfe61a0703ea4d3be1829ecd247e56406a5d478c1934d3d7e8cffd2ec5a2a26b8c61b092821f33308f46f0d949b6cd2308a4241e60013
+  languageName: node
+  linkType: hard
+
+"@turf/meta@npm:6.x, @turf/meta@npm:^6.3.0":
+  version: 6.3.0
+  resolution: "@turf/meta@npm:6.3.0"
+  dependencies:
+    "@turf/helpers": ^6.3.0
+  checksum: 149f613cb03d9131bb612d3cd6c0436611e47428865eda4c40440b47ed9222728fb5bcf9acca8604fc6059030b10b17f75f1e3729afb6e1b23e6723458e837d0
+  languageName: node
+  linkType: hard
+
+"@turf/nearest-point-on-line@npm:>= 4.0.0 <7.0.0":
+  version: 6.3.0
+  resolution: "@turf/nearest-point-on-line@npm:6.3.0"
+  dependencies:
+    "@turf/bearing": ^6.3.0
+    "@turf/destination": ^6.3.0
+    "@turf/distance": ^6.3.0
+    "@turf/helpers": ^6.3.0
+    "@turf/invariant": ^6.3.0
+    "@turf/line-intersect": ^6.3.0
+    "@turf/meta": ^6.3.0
+  checksum: a2d19a08c18ade7a0cd5a0e18f0bd756199b8e70f439e2f85be0c261bee486fe7b4d71073e0413a0e3857940b05ebf370733cffdde8ffc3c5ce450121c3d4ca8
   languageName: node
   linkType: hard
 
@@ -2953,6 +3121,41 @@ __metadata:
   checksum: d7511c9f4896abfae0bfddaeb28dc0bb29ba20ea5532d46b71f58f23e902115b1062c368faa84dfedfb243035f92cf80916471f8d93e181863a144d0bd6ed43b
   languageName: node
   linkType: hard
+
+"MountainApp@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "MountainApp@workspace:."
+  dependencies:
+    "@babel/core": ~7.9.0
+    "@expo/ngrok": ^2.4.3
+    "@react-native-community/masked-view": 0.1.10
+    "@react-native-mapbox-gl/maps": 8.0.0
+    "@react-navigation/drawer": ^5.12.4
+    "@react-navigation/native": ^5.9.3
+    "@types/react": ~16.9.35
+    "@types/react-dom": ~16.9.8
+    "@types/react-native": ~0.63.2
+    "@typescript-eslint/eslint-plugin": ^4.20.0
+    "@typescript-eslint/parser": ^4.20.0
+    eslint: ^7.24.0
+    eslint-plugin-react: ^7.23.1
+    eslint-plugin-react-hooks: ^4.2.0
+    expo: ^41.0.0
+    expo-splash-screen: ~0.10.2
+    expo-status-bar: ~1.0.4
+    expo-updates: ~0.5.4
+    react: 16.13.1
+    react-dom: 16.13.1
+    react-native: ~0.63.4
+    react-native-gesture-handler: ~1.10.2
+    react-native-reanimated: ~2.1.0
+    react-native-safe-area-context: 3.2.0
+    react-native-screens: ~3.0.0
+    react-native-unimodules: ~0.13.3
+    react-native-web: ~0.13.12
+    typescript: ~4.0.0
+  languageName: unknown
+  linkType: soft
 
 "abbrev@npm:1":
   version: 1.1.1
@@ -4319,6 +4522,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"debounce@npm:^1.2.0":
+  version: 1.2.1
+  resolution: "debounce@npm:1.2.1"
+  checksum: 04a00c6c45173ac6fb03ad3a7cf742fa4a86f6bf86b22f5b867085f739d0010ad98cbb92e80d60293faf6efb5452c637941092bd8d783cfeabe55c2000b1b07f
+  languageName: node
+  linkType: hard
+
 "debug@npm:2.6.9, debug@npm:^2.2.0, debug@npm:^2.3.3":
   version: 2.6.9
   resolution: "debug@npm:2.6.9"
@@ -5021,6 +5231,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-image-loader@npm:~2.1.1":
+  version: 2.1.1
+  resolution: "expo-image-loader@npm:2.1.1"
+  checksum: 8c5bec09b168aaa8740d2a3b527fd22ead25ad9682a7916b69492c848e05466be247754bcc9bcca55c71265764c8e8a6f217834e346a0e68d87fea943a238b6c
+  languageName: node
+  linkType: hard
+
 "expo-keep-awake@npm:~9.1.2":
   version: 9.1.2
   resolution: "expo-keep-awake@npm:9.1.2"
@@ -5028,10 +5245,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-permissions@npm:~12.0.1":
+  version: 12.0.1
+  resolution: "expo-permissions@npm:12.0.1"
+  checksum: e007c6ffdf2978bb9dae2c4bdbca204ac98d99be868852390a35d5684fe8304ad4ee0892ab95972943381bddf4044fe505c03718afd630c5e9c1eba9e1f4c00f
+  languageName: node
+  linkType: hard
+
+"expo-splash-screen@npm:~0.10.2":
+  version: 0.10.2
+  resolution: "expo-splash-screen@npm:0.10.2"
+  dependencies:
+    "@expo/configure-splash-screen": 0.3.4
+  checksum: 206d2c97c6313ec903932413be4bca8de9613c67452a1fa5549cf4347cddef0ee7b7a9eb76d012441f2cea3d3fa3f8ddbf0eb1ec31dae1af9ba047cd95c8300a
+  languageName: node
+  linkType: hard
+
 "expo-status-bar@npm:~1.0.4":
   version: 1.0.4
   resolution: "expo-status-bar@npm:1.0.4"
   checksum: 7da7b3f3a54dca2d2c1d229e22f558adbccc14790c24663316d22241060172280e6cb31bc10d27d93e7da3f50a07ec8cbdf4a82a1a869eb7e2265e04424d6a9e
+  languageName: node
+  linkType: hard
+
+"expo-structured-headers@npm:~1.0.1":
+  version: 1.0.1
+  resolution: "expo-structured-headers@npm:1.0.1"
+  checksum: 37fc4e8129bbf227aecd4df643fc6dc1ce7f76adbb2f1b2122a6cac1f2daaaff0ae804d13afe799157d3826b7786e264014817e9b5920a529276329345ef9164
+  languageName: node
+  linkType: hard
+
+"expo-updates@npm:~0.5.4":
+  version: 0.5.4
+  resolution: "expo-updates@npm:0.5.4"
+  dependencies:
+    "@expo/config-plugins": ^1.0.18
+    "@expo/metro-config": ^0.1.59
+    expo-structured-headers: ~1.0.1
+    fbemitter: ^2.1.1
+    resolve-from: ^5.0.0
+    uuid: ^3.4.0
+  checksum: fffff1e1d4d0aad1de7d8aed98c28070d950a105e42825b4a19bcbf125599e6b30e63216d84ac88c05a132d8c5b468c27660c82ef73bc1385f1d5142867daefe
   languageName: node
   linkType: hard
 
@@ -5609,6 +5863,18 @@ fsevents@^1.2.7:
   version: 1.0.0-beta.2
   resolution: "gensync@npm:1.0.0-beta.2"
   checksum: d523437689c97b3aba9c5cdeca4677d5fff9a29d620db693fea40d852bad63563110f16979d0170248439dbcd2ecee0780fb2533d3f0519f019081aa10767c60
+  languageName: node
+  linkType: hard
+
+"geojson-rbush@npm:3.x":
+  version: 3.1.2
+  resolution: "geojson-rbush@npm:3.1.2"
+  dependencies:
+    "@turf/bbox": "*"
+    "@turf/helpers": 6.x
+    "@turf/meta": 6.x
+    rbush: ^2.0.0
+  checksum: b62aa3e2e452cd30506fa01b9d443614bc30a65174ce6370bc847e81fd53bd013fe66ea18fdbe0e65f84c8c4d655769e0185c947f7831021a64115e4474faf01
   languageName: node
   linkType: hard
 
@@ -8502,10 +8768,26 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"quickselect@npm:^1.0.1":
+  version: 1.1.1
+  resolution: "quickselect@npm:1.1.1"
+  checksum: 40038a918248b54389383c340139912716b35393688af27fa391d77b372ef393f31982d16aceb1240f2cb4a88d6c6cba8d2b198a8918f83e04ca333cc7121ed4
+  languageName: node
+  linkType: hard
+
 "range-parser@npm:~1.2.1":
   version: 1.2.1
   resolution: "range-parser@npm:1.2.1"
   checksum: 05074f5b23dbdc24acdae9821dd684fbc9c0d770cdaa4469ab529d8e0fc1338aa33561a4c7c14a1f9bdcb3b5e9a3770e5a80318258a72289a7ef05fcda72a707
+  languageName: node
+  linkType: hard
+
+"rbush@npm:^2.0.0":
+  version: 2.0.2
+  resolution: "rbush@npm:2.0.2"
+  dependencies:
+    quickselect: ^1.0.1
+  checksum: 21d330c39b2c42198882837d0ffc7614d9ff76be18b7230ff434d9747e2f88cf424b15d5dd3bc026d1c76bfdcb197548ca309f6c9530c76808845f4298b67f86
   languageName: node
   linkType: hard
 
@@ -8605,6 +8887,34 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-native-unimodules@npm:~0.13.3":
+  version: 0.13.3
+  resolution: "react-native-unimodules@npm:0.13.3"
+  dependencies:
+    "@unimodules/core": ~7.1.0
+    "@unimodules/react-native-adapter": ~6.2.2
+    chalk: ^2.4.2
+    expo-asset: ~8.3.1
+    expo-constants: ~10.1.3
+    expo-file-system: ~11.0.2
+    expo-image-loader: ~2.1.1
+    expo-permissions: ~12.0.1
+    find-up: ~5.0.0
+    unimodules-app-loader: ~2.1.0
+    unimodules-barcode-scanner-interface: ~6.1.0
+    unimodules-camera-interface: ~6.1.0
+    unimodules-constants-interface: ~6.1.0
+    unimodules-face-detector-interface: ~6.1.0
+    unimodules-file-system-interface: ~6.1.0
+    unimodules-font-interface: ~6.1.0
+    unimodules-image-loader-interface: ~6.1.0
+    unimodules-permissions-interface: ~6.1.0
+    unimodules-sensors-interface: ~6.1.0
+    unimodules-task-manager-interface: ~6.1.0
+  checksum: af0695c0d0035052b5e0abbbe53ada3d45b6b06c5a9b24574e88bbd7ac941b82b1e5409e0a7c65f960a7abe018c79cdac45caf5284f69ef9577bb40a3c54cda8
+  languageName: node
+  linkType: hard
+
 "react-native-web@npm:~0.13.12":
   version: 0.13.18
   resolution: "react-native-web@npm:0.13.18"
@@ -8625,14 +8935,14 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"react-native@https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz":
-  version: 0.63.2
-  resolution: "react-native@https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz"
+"react-native@npm:~0.63.4":
+  version: 0.63.4
+  resolution: "react-native@npm:0.63.4"
   dependencies:
     "@babel/runtime": ^7.0.0
-    "@react-native-community/cli": ^4.14.0
-    "@react-native-community/cli-platform-android": ^4.13.0
-    "@react-native-community/cli-platform-ios": ^4.13.0
+    "@react-native-community/cli": ^4.10.0
+    "@react-native-community/cli-platform-android": ^4.10.0
+    "@react-native-community/cli-platform-ios": ^4.10.0
     abort-controller: ^3.0.0
     anser: ^1.4.9
     base64-js: ^1.1.2
@@ -8660,7 +8970,7 @@ fsevents@^1.2.7:
     react: 16.13.1
   bin:
     react-native: ./cli.js
-  checksum: 62c0b9e30e558ca9b83aa9781ad06c325bc20183c73bc94d8e6d71f46d0cc9e2b30f9984fdc6287aaa8ed9913cb180f9983ec63721cc761e6f2969cdabca8598
+  checksum: df562a1237abb2311bdf795e8e28d0e6be468e692cdbcc426a40f2b1f0db070f57ad0cd8ee7bfb52917fc90570fd7b370baed62c41c21ec5f2b52b873d314a8e
   languageName: node
   linkType: hard
 
@@ -9001,37 +9311,6 @@ resolve@^2.0.0-next.3:
   checksum: a84877f6c9027bdc3c501b0761603f0171e032581897308030b4314486ccd5ef65571239d62f23ee62a4a6cada948e2a9a0446da30ed3566498c1eee474f23e0
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@babel/core": ~7.9.0
-    "@expo/ngrok": ^2.4.3
-    "@react-native-community/masked-view": 0.1.10
-    "@react-navigation/drawer": ^5.12.4
-    "@react-navigation/native": ^5.9.3
-    "@types/react": ~16.9.35
-    "@types/react-dom": ~16.9.8
-    "@types/react-native": ~0.63.2
-    "@typescript-eslint/eslint-plugin": ^4.20.0
-    "@typescript-eslint/parser": ^4.20.0
-    eslint: ^7.24.0
-    eslint-plugin-react: ^7.23.1
-    eslint-plugin-react-hooks: ^4.2.0
-    expo: ^41.0.0
-    expo-status-bar: ~1.0.4
-    react: 16.13.1
-    react-dom: 16.13.1
-    react-native: "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz"
-    react-native-gesture-handler: ~1.10.2
-    react-native-reanimated: ~2.1.0
-    react-native-safe-area-context: 3.2.0
-    react-native-screens: ~3.0.0
-    react-native-web: ~0.13.12
-    typescript: ~4.0.0
-  languageName: unknown
-  linkType: soft
 
 "rsvp@npm:^4.8.4":
   version: 4.8.5
@@ -10119,6 +10398,83 @@ typescript@~4.0.0:
   version: 1.1.0
   resolution: "unicode-property-aliases-ecmascript@npm:1.1.0"
   checksum: 2fa80e62a6ec395af3ee4747ce9738d2fee25ef963fb5650e358b2eb878d7f047f5ccdbd5f92e9605d13276f995fc3c4e3084475b03722cdd7ce9d58a148b2bd
+  languageName: node
+  linkType: hard
+
+"unimodules-app-loader@npm:~2.1.0":
+  version: 2.1.0
+  resolution: "unimodules-app-loader@npm:2.1.0"
+  checksum: 527e92e35d5ae0501bd884730b268fc1c61bb2fb0dc99aad05f0bd996ab4b3a1aa59454ba827b709d956acedba79e7dfdabb928f8b8045964994e1a0245cd97c
+  languageName: node
+  linkType: hard
+
+"unimodules-barcode-scanner-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-barcode-scanner-interface@npm:6.1.0"
+  checksum: a8d9447ca2755be5d4cd69f7242bba3e561640cacee2914d07c2b3fd8a9b24922aae63cef453fa943f24057874e2960f611876c0d23808e6d2a88d2ff0318dcc
+  languageName: node
+  linkType: hard
+
+"unimodules-camera-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-camera-interface@npm:6.1.0"
+  checksum: 33f8e2ba0d701520f8093cae7ef4b0cce11a74058c288fbf5794de4e6eec923d0e6c87e7b1fde06762b800123a97551c844db6b2500648c60e12b1762ecab4c6
+  languageName: node
+  linkType: hard
+
+"unimodules-constants-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-constants-interface@npm:6.1.0"
+  checksum: f9dd838b278a97e8fcde2092d2089d5349b02d042a9a7b12a5d282c617ba66187191c0fc1338b7997df096a2999486af65dbc7add0358102213f53fd6fb69cee
+  languageName: node
+  linkType: hard
+
+"unimodules-face-detector-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-face-detector-interface@npm:6.1.0"
+  checksum: 2cd666ef191e1a69a08ec0cfb14739a488e7da5fc87b2c8ade7caddb7a7a7fdd2de21817e892de25ba50d401a25669089c789fd8f1e069904243e8b19118cd7b
+  languageName: node
+  linkType: hard
+
+"unimodules-file-system-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-file-system-interface@npm:6.1.0"
+  checksum: a87d95e53c5ed1535900af6d45b56909812ad9e317027bee51bf74afdfee833e0046418dc47e18a375d4a90d91aedbcce8642450e699fdba551a4346c2ae0de1
+  languageName: node
+  linkType: hard
+
+"unimodules-font-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-font-interface@npm:6.1.0"
+  checksum: 9314b94bcde15d87b4e3d957b734f5dedb5021dc21eba2eb544c076614ed84bb79d48f8dde24d9669202284ec7ce0f9463cc117270c870f1177a5cb0575a8e5b
+  languageName: node
+  linkType: hard
+
+"unimodules-image-loader-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-image-loader-interface@npm:6.1.0"
+  checksum: 0fef1ef7732e0f661f995e99f2bd58973eacafd2f2735ee457e6d99972a9a964012930475d4247f061cc371495a163f469f5302f7bf9fb6a0feb937c392fb2f9
+  languageName: node
+  linkType: hard
+
+"unimodules-permissions-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-permissions-interface@npm:6.1.0"
+  checksum: c09dc108adb6b7107f38797f77738e61343814404d0aa4c9e8df56d676a69698f9bcfcdb0c30c415fbcfab45505c4773fbbc9c676ff498e8ba71d900f04728a7
+  languageName: node
+  linkType: hard
+
+"unimodules-sensors-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-sensors-interface@npm:6.1.0"
+  checksum: a417582b20f31f2f2e9ded3b667c6347222d1ad1e75bb98e20ec18e10e97fe4a7843f3e1c75ca383039b67bef17e3b8e3558440334c460fad480e1558219a49a
+  languageName: node
+  linkType: hard
+
+"unimodules-task-manager-interface@npm:~6.1.0":
+  version: 6.1.0
+  resolution: "unimodules-task-manager-interface@npm:6.1.0"
+  checksum: 746094b6842bbe1f1b8ebd4e0c1ff6c5b117a691e8d8acd6adca34eb0a659b4d5e5c3304dda84348381b4c4cf5a78f661c04c9d877791d81ea498a208c4e0759
   languageName: node
   linkType: hard
 
