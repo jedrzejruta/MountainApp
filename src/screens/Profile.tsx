@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, SafeAreaView} from 'react-native';
+import { Button, SafeAreaView } from 'react-native';
 import { ProfileScreenNavProp } from '../components/DrawerNavigation';
+import AuthUser from '../components/UserAuth';
+import stylesheet from '../styles/Style';
 
 type ProfileScreenProps = {
 	navigation: ProfileScreenNavProp;
@@ -8,8 +10,9 @@ type ProfileScreenProps = {
 
 const Profile = ({ navigation } : ProfileScreenProps) : JSX.Element => {
 	return (
-		<SafeAreaView>
+		<SafeAreaView style={{...stylesheet.container, paddingHorizontal: 10}}>
 			<Button onPress={() => navigation.goBack()} title="Go back to home"/>
+			<AuthUser/>
 		</SafeAreaView>
 	);
 };
