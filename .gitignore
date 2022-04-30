@@ -76,3 +76,5 @@ web-build/
 
 # .env file
 .env
+
+google-services.json
