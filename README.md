@@ -3,6 +3,17 @@
 
 ### Screenshots:
 
+<table>
+  <tr>
+    <td>Route displayed on map</td>
+     <td>Looked up point details</td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="https://user-images.githubusercontent.com/48320979/188285869-47cf055b-8474-4f41-814d-0348c6a84381.png" width="300" height="550" alt="Route on map"></td>
+  <td valign="top"><img src="https://user-images.githubusercontent.com/48320979/188285874-2b1c99aa-dce4-43b1-8130-be8d3f3b54f9.png" width="300" height="550" alt="Point details"/></td>
+  </tr>
+ </table>
+
 
 ### Built with:
 - React Native
